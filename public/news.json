@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Nuova Mostra Fotografica: Luci di Roma",
+    "date": "2024-11-10",
+    "category": "eventi",
+    "image": "/503350915_2987122261470100_8225564212138507156_n.jpg",
+    "excerpt": "Inaugurazione della nuova esposizione fotografica dedicata alla città eterna",
+    "content": "Dal 10 novembre esponiamo 'Luci di Roma', una collezione fotografica che cattura l'anima notturna della nostra città. Le opere sono in vendita e rimarranno esposte fino a fine gennaio. Vernissage con degustazione Gin del Marchese ogni venerdì sera."
+  },
+  {
+    "id": 2,
+    "title": "Happy Hour Speciale: 12 Spritz da Scoprire",
+    "date": "2024-11-05",
+    "category": "drink",
+    "image": "/503578895_2987121988136794_5560936930106572160_n.jpg",
+    "excerpt": "Ogni martedì e giovedì alle 18:00, tour guidato dei nostri 12 tipi di Spritz",
+    "content": "Non il solito happy hour. Ogni settimana Alessandro vi guida attraverso i nostri 12 Spritz, dalla tradizione veneta alle nostre creazioni speciali. Dalle 18:00 alle 20:00, €7 tutti gli Spritz. Prenota il tuo posto al bancone."
+  },
+  {
+    "id": 3,
+    "title": "Live Jazz Session",
+    "date": "2024-10-28",
+    "category": "eventi",
+    "image": "/503801575_2987122254803434_5297063782742739829_n.jpg",
+    "excerpt": "Ritorna il jazz dal vivo al Bukowski's, ultimo venerdì del mese",
+    "content": "Il jazz torna a riempire il nostro salotto letterario. Ogni ultimo venerdì del mese, dalle 21:00, trio jazz live. Ingresso libero, consumazione consigliata. Prenota per il tavolo, l'atmosfera intima non permette tanti posti."
+  },
+  {
+    "id": 4,
+    "title": "Degustazione Gin del Marchese",
+    "date": "2024-10-15",
+    "category": "gin",
+    "image": "/gin.png",
+    "excerpt": "Serata di degustazione guidata del nostro gin artigianale",
+    "content": "Alessandro racconta la storia del Gin del Marchese: dalle botaniche romane al processo artigianale. Degustazione di 3 cocktails signature + storytelling + possibilità di acquisto bottiglia con sconto del 15%. Solo su prenotazione, massimo 12 persone. €25 a persona."
+  },
+  {
+    "id": 5,
+    "title": "Biblioteca Viva: Club del Libro",
+    "date": "2024-10-08",
+    "category": "cultura",
+    "image": "/503578895_2987121988136794_5560936930106572160_n.jpg",
+    "excerpt": "Nasce il club del libro mensile tra i divani rossi del Bukowski's",
+    "content": "Primo mercoledì del mese, ore 19:30: il Club del Libro del Bukowski's. Scegliamo insieme un libro dalla nostra biblioteca, lo leggiamo, ci ritroviamo a discuterne davanti a un Negroni. Questo mese: 'Post Office' di Bukowski. Partecipazione libera."
+  },
+  {
+    "id": 6,
+    "title": "Halloween Speakeasy Night",
+    "date": "2024-10-31",
+    "category": "eventi",
+    "image": "/503350915_2987122261470100_8225564212138507156_n.jpg",
+    "excerpt": "Una notte speciale in stile anni '20 per celebrare Halloween",
+    "content": "31 ottobre: il Bukowski's si trasforma in un vero speakeasy degli anni '20. Dress code vintage consigliato, cocktails proibizionisti, musica swing. Ingresso con password segreta (chiedila sui social). Aperto fino alle 3:00."
+  }
+]
