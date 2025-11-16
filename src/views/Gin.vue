@@ -61,6 +61,19 @@
       </div>
     </section>
 
+    <!-- GIN IMAGE SECTION -->
+    <section class="py-24 bg-black">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="flex justify-center">
+          <img
+            src="/gin.png"
+            alt="Gin del Marchese - Bottiglia"
+            class="w-full max-w-2xl h-auto object-contain"
+          >
+        </div>
+      </div>
+    </section>
+
     <!-- LE BOTANICHE -->
     <section class="py-24 bg-black border-y border-white/10">
       <div class="max-w-7xl mx-auto px-6">
