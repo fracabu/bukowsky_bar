@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu Bukowski's Bar - 12 Spritz, cocktails signature, tartare speciale, taglieri e vini selezionati. Borgo Pio, Roma.">
+    <meta name="keywords" content="menu bar Roma, cocktails Borgo Pio, spritz Roma, aperitivo Roma">
+
+    <title>Menu - Bukowski's Bar | Cocktails, Spritz, Food & Wine</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lora:wght@400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">BUKOWSKI'S</div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="il-locale.html" class="nav-link">Il Locale</a></li>
+                <li><a href="gin.html" class="nav-link">Il Nostro Gin</a></li>
+                <li><a href="news.html" class="nav-link">News & Eventi</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MENU HEADER -->
+    <section class="menu-hero section">
+        <div class="container" style="padding-top: 100px; text-align: center;">
+            <h1>IL NOSTRO MENU</h1>
+            <div class="separator">───── ✦ ─────</div>
+            <p class="subtitle" style="max-width: 800px; margin: 2rem auto; font-size: 1.125rem;">
+                Non abbiamo la cucina stellata. Abbiamo la tartare che fa tornare.
+                I taglieri che fanno restare. E gli spritz che fanno dimenticare
+                che esistono altri 11 tipi di spritz da provare.
+            </p>
+        </div>
+    </section>
+
+    <!-- MENU TABS -->
+    <section class="section" style="background: var(--dark-sepia); padding-top: 2rem;">
+        <div class="container">
+            <div class="menu-tabs">
+                <button class="tab active" data-tab="spritz">Spritz (12!)</button>
+                <button class="tab" data-tab="cocktails">Cocktails</button>
+                <button class="tab" data-tab="food">Food</button>
+                <button class="tab" data-tab="wine">Vini</button>
+            </div>
+
+            <!-- SPRITZ SECTION -->
+            <div class="menu-section" id="spritz" style="display: block;">
+                <div class="section-intro">
+                    <h2>12 TIPI DI SPRITZ</h2>
+                    <div class="separator">───── ✦ ─────</div>
+                    <p style="text-align: center; color: var(--antique-gold); margin-bottom: 3rem;">
+                        Sbizzarritevi! La tradizione dell'aperitivo italiano in 12 variazioni.
+                    </p>
+                </div>
+
+                <div class="spritz-grid">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Aperol</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Il classico intramontabile</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Campari</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Più amaro, più carattere</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Hugo</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Sambuco, prosecco e menta</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Select</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Veneziano doc</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Cynar</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Carciofo e prosecco</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Limoncello</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Fresco e mediterraneo</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Angostura</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Speziato e aromatico</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Americano</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Campari e vermouth</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Montenegro</h3>
+                            <span class="item-price">€7</span>
+                        </div>
+                        <p class="item-description">Amaro e prosecco</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Gin del Marchese</h3>
+                            <span class="item-price">€9</span>
+                        </div>
+                        <p class="item-description">La nostra versione speciale</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Lillet</h3>
+                            <span class="item-price">€8</span>
+                        </div>
+                        <p class="item-description">Elegante e floreale</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Spritz Bukowski's Special</h3>
+                            <span class="item-price">€9</span>
+                        </div>
+                        <p class="item-description">Ricetta segreta di Alessandro</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COCKTAILS SECTION -->
+            <div class="menu-section" id="cocktails" style="display: none;">
+                <div class="section-intro">
+                    <h2>COCKTAILS</h2>
+                    <div class="separator">───── ✦ ─────</div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Signature Cocktails</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Gin del Marchese & Tonic</h3>
+                            <span class="item-price">€10</span>
+                        </div>
+                        <p class="item-description">
+                            Il nostro gin con tonica premium, scorza di limone e bacche di ginepro
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Negroni Bukowski's</h3>
+                            <span class="item-price">€10</span>
+                        </div>
+                        <p class="item-description">
+                            Gin del Marchese, Campari, Vermouth Rosso, scorza d'arancia
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Martini Letterario</h3>
+                            <span class="item-price">€11</span>
+                        </div>
+                        <p class="item-description">
+                            Gin, Vermouth Dry, oliva o twist di limone
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Bukowski's Sour</h3>
+                            <span class="item-price">€9</span>
+                        </div>
+                        <p class="item-description">
+                            Whisky, limone, zucchero, albume
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Classici</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Mojito</h3>
+                            <span class="item-price">€8</span>
+                        </div>
+                        <p class="item-description">Rum, menta, lime, zucchero, soda</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Moscow Mule</h3>
+                            <span class="item-price">€8</span>
+                        </div>
+                        <p class="item-description">Vodka, ginger beer, lime</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Old Fashioned</h3>
+                            <span class="item-price">€10</span>
+                        </div>
+                        <p class="item-description">Bourbon, zucchero, Angostura, arancia</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Manhattan</h3>
+                            <span class="item-price">€10</span>
+                        </div>
+                        <p class="item-description">Whisky, Vermouth Rosso, Angostura</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOD SECTION -->
+            <div class="menu-section" id="food" style="display: none;">
+                <div class="section-intro">
+                    <h2>FOOD</h2>
+                    <div class="separator">───── ✦ ─────</div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Antipasti & Specialità</h3>
+
+                    <div class="menu-item highlight">
+                        <div class="item-header">
+                            <h3 class="item-name">Tartare Speciale ⭐</h3>
+                            <span class="item-price">€14</span>
+                        </div>
+                        <p class="item-description">
+                            La nostra tartare di qualità indiscussa, preparata al momento
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Tagliere Misto</h3>
+                            <span class="item-price">€12</span>
+                        </div>
+                        <p class="item-description">
+                            Salumi e formaggi DOP selezionati, confetture artigianali
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Hummus del Marchese</h3>
+                            <span class="item-price">€8</span>
+                        </div>
+                        <p class="item-description">
+                            Hummus fatto in casa con crudité e pane tostato
+                        </p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Bruschette Assortite</h3>
+                            <span class="item-price">€9</span>
+                        </div>
+                        <p class="item-description">
+                            3 varianti con pomodoro, burrata, funghi
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Primi & Secondi</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Lasagna della Casa</h3>
+                            <span class="item-price">€11</span>
+                        </div>
+                        <p class="item-description">Ricetta tradizionale, fatta in casa</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Carbonara</h3>
+                            <span class="item-price">€12</span>
+                        </div>
+                        <p class="item-description">La classica romana come si deve</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Insalata Bukowski's</h3>
+                            <span class="item-price">€9</span>
+                        </div>
+                        <p class="item-description">
+                            Mix di verdure fresche, noci, parmigiano, vinaigrette al balsamico
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Dolci</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Tiramisù</h3>
+                            <span class="item-price">€6</span>
+                        </div>
+                        <p class="item-description">Fatto in casa, ricetta tradizionale</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Dolce del Giorno</h3>
+                            <span class="item-price">€6</span>
+                        </div>
+                        <p class="item-description">Chiedi al personale</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WINE SECTION -->
+            <div class="menu-section" id="wine" style="display: none;">
+                <div class="section-intro">
+                    <h2>CARTA DEI VINI</h2>
+                    <div class="separator">───── ✦ ─────</div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Vini Bianchi</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Frascati Superiore DOCG</h3>
+                            <span class="item-price">€18</span>
+                        </div>
+                        <p class="item-description">Lazio - Calice €5</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Verdicchio dei Castelli di Jesi DOC</h3>
+                            <span class="item-price">€22</span>
+                        </div>
+                        <p class="item-description">Marche - Calice €6</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Gavi DOCG</h3>
+                            <span class="item-price">€24</span>
+                        </div>
+                        <p class="item-description">Piemonte - Calice €6</p>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Vini Rossi</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Chianti Classico DOCG</h3>
+                            <span class="item-price">€22</span>
+                        </div>
+                        <p class="item-description">Toscana - Calice €6</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Montepulciano d'Abruzzo DOC</h3>
+                            <span class="item-price">€20</span>
+                        </div>
+                        <p class="item-description">Abruzzo - Calice €5</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Nero d'Avola DOC</h3>
+                            <span class="item-price">€21</span>
+                        </div>
+                        <p class="item-description">Sicilia - Calice €6</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Barolo DOCG</h3>
+                            <span class="item-price">€45</span>
+                        </div>
+                        <p class="item-description">Piemonte - Calice €12</p>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="category-title">Prosecco & Bollicine</h3>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Prosecco DOC</h3>
+                            <span class="item-price">€18</span>
+                        </div>
+                        <p class="item-description">Veneto - Calice €5</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3 class="item-name">Franciacorta DOCG</h3>
+                            <span class="item-price">€35</span>
+                        </div>
+                        <p class="item-description">Lombardia - Calice €9</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOWNLOAD PDF -->
+            <div style="text-align: center; margin-top: 4rem; padding: 2rem; background: var(--overlay-sepia); border: 1px solid var(--antique-gold);">
+                <p style="margin-bottom: 1rem; color: var(--antique-gold);">
+                    Vuoi portare il menu con te?
+                </p>
+                <a href="assets/downloads/menu-bukowskis-bar.pdf" class="btn" download>Scarica Menu PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column brand">
+                <h3>BUKOWSKI'S BAR</h3>
+                <p style="color: var(--antique-gold); margin-bottom: 1rem;">Galleria · Café · Bistrot</p>
+                <p class="tagline" style="font-style: italic; font-size: 0.95rem; line-height: 1.6;">
+                    "Qui non servono fronzoli.<br>
+                    Solo storie vere e gin autentico."
+                </p>
+            </div>
+
+            <div class="footer-column links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="il-locale.html">Il Locale</a></li>
+                    <li><a href="gin.html">Il Nostro Gin</a></li>
+                    <li><a href="news.html">News & Eventi</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact">
+                <h4>Contatti</h4>
+                <p>Via degli Ombrellari, 25<br>
+                   00193 Roma - Borgo Pio</p>
+                <p>Tel: <a href="tel:+390664760105">06 6476 0105</a></p>
+                <p style="color: var(--antique-gold);">Mar-Dom: 15:00 - 02:00</p>
+            </div>
+
+            <div class="footer-column social">
+                <h4>Seguici</h4>
+                <div class="social-icons" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="https://instagram.com/bukowskis_bar" target="_blank">📷 Instagram</a>
+                    <a href="https://facebook.com/BukowskisBarRoma" target="_blank">📘 Facebook</a>
+                    <a href="https://wa.me/393517139892" target="_blank">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="separator">───── ✦ ─────</div>
+            <div class="footer-legal">
+                <p>&copy; 2024 Bukowski's Bar - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
