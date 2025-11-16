@@ -76,31 +76,57 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========================================
-// INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
+// APPLE WATCH STYLE SCROLL ANIMATIONS
+// Continuous fade in/out based on scroll position
 // ========================================
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
+// Advanced Intersection Observer with multiple thresholds
+const appleWatchObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+        const element = entry.target;
+        const ratio = entry.intersectionRatio;
+
+        // Calculate opacity based on intersection ratio
         if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-            // Optionally stop observing after animation
-            // observer.unobserve(entry.target);
+            // Fade in as element enters viewport
+            element.style.opacity = Math.min(ratio * 2, 1);
+            element.style.transform = `translateY(${(1 - ratio) * 30}px)`;
+            element.classList.add('is-visible');
+        } else {
+            // Fade out as element leaves viewport
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(30px)';
+            element.classList.remove('is-visible');
         }
     });
-}, observerOptions);
-
-// Observe all sections
-document.querySelectorAll('.section').forEach(section => {
-    observer.observe(section);
+}, {
+    threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+    rootMargin: '0px 0px -50px 0px'
 });
 
-// Observe cards
-document.querySelectorAll('.card, .experience-card').forEach(card => {
-    observer.observe(card);
+// Apply to all sections
+document.querySelectorAll('.section').forEach(section => {
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(30px)';
+    appleWatchObserver.observe(section);
+});
+
+// Apply to all cards with stagger
+const cards = document.querySelectorAll('.card, .experience-card, .news-card, .gallery-item, .atmosphere-card, .feature-item');
+cards.forEach((card, index) => {
+    card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    appleWatchObserver.observe(card);
+});
+
+// Apply to paragraphs and headings
+document.querySelectorAll('.text-column p, .text-column h2, .text-column h3').forEach((el, index) => {
+    el.style.transition = `opacity 0.5s ease ${index * 0.05}s, transform 0.5s ease ${index * 0.05}s`;
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    appleWatchObserver.observe(el);
 });
 
 // ========================================

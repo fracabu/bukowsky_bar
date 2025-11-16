@@ -676,6 +676,26 @@ a:hover {
   transform: translateY(0);
 }
 
+/* Apple Watch Style Scroll Animations */
+.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Smooth scroll behavior for all elements */
+* {
+  will-change: opacity, transform;
+}
+
+/* Optimize performance */
+.section,
+.card,
+.experience-card {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
 .fade-in-up {
   animation: fadeInUp 0.8s ease both;
 }
