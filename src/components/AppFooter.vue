@@ -31,10 +31,8 @@
           </div>
           <span class="text-white/30">·</span>
           <p class="text-white/40">
-            &copy; 2024
+            &copy; 2014
           </p>
-          <span class="text-white/30">·</span>
-          <a href="https://www.codecraft.it" target="_blank" rel="noopener" class="text-white/30 hover:text-white/50 transition-colors no-underline">codecraft.it</a>
         </div>
       </div>
     </div>
