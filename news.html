@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News & Eventi Bukowski's Bar - Mostre fotografiche, degustazioni, serate speciali a Borgo Pio, Roma.">
+    <meta name="keywords" content="eventi Roma, mostre Borgo Pio, serate bar Roma, eventi culturali">
+
+    <title>News & Eventi - Bukowski's Bar | Mostre, Degustazioni, Serate</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lora:wght@400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">BUKOWSKI'S</div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="il-locale.html" class="nav-link">Il Locale</a></li>
+                <li><a href="gin.html" class="nav-link">Il Nostro Gin</a></li>
+                <li><a href="news.html" class="nav-link active">News & Eventi</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NEWS HERO -->
+    <section class="news-hero section">
+        <div class="container" style="padding-top: 100px; text-align: center;">
+            <h1>NEWS & EVENTI</h1>
+            <div class="separator">───── ✦ ─────</div>
+            <p class="subtitle" style="max-width: 800px; margin: 2rem auto; font-size: 1.125rem;">
+                Mostre che cambiano le pareti. Serate che riempiono i bicchieri.
+                Storie che meritano di essere raccontate.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="section" style="background: var(--dark-sepia); padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="news-filters">
+                <button class="filter active" data-filter="all">Tutti</button>
+                <button class="filter" data-filter="eventi">Eventi</button>
+                <button class="filter" data-filter="mostre">Mostre</button>
+                <button class="filter" data-filter="gin">Gin</button>
+                <button class="filter" data-filter="menu">Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS GRID -->
+    <section class="section" style="background: var(--ink-black);">
+        <div class="container">
+            <div class="news-grid">
+
+                <!-- Featured Post -->
+                <article class="news-card featured" data-category="eventi">
+                    <div class="card-image">
+                        <!-- Placeholder image -->
+                        <div style="width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--deep-bordeaux), var(--ink-black)); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 3rem; color: var(--antique-gold);">🎨</span>
+                        </div>
+                        <span class="category-badge eventi">Eventi</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">15 Dicembre 2024</time>
+                        <h2 class="post-title">Mostra Fotografica: "Luci di Roma"</h2>
+                        <p class="post-excerpt">
+                            Una nuova mostra fotografica dedicata alla Roma notturna.
+                            Inaugurazione con aperitivo e degustazione Gin del Marchese.
+                            Esposizione permanente fino al 28 Febbraio 2025.
+                        </p>
+                        <a href="#" class="read-more">Leggi di più →</a>
+                    </div>
+                </article>
+
+                <!-- Standard Posts -->
+                <article class="news-card" data-category="gin">
+                    <div class="card-image">
+                        <div style="width: 100%; aspect-ratio: 4/3; background: var(--overlay-sepia); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: var(--antique-gold);">🌿</span>
+                        </div>
+                        <span class="category-badge gin">Gin</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">10 Dicembre 2024</time>
+                        <h3 class="post-title">Degustazione Gin del Marchese</h3>
+                        <p class="post-excerpt">
+                            Serata dedicata al nostro gin con Alessandro. Scopri le botaniche e le note.
+                        </p>
+                        <a href="#" class="read-more">Scopri →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="menu">
+                    <div class="card-image">
+                        <div style="width: 100%; aspect-ratio: 4/3; background: var(--overlay-sepia); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: var(--antique-gold);">🍸</span>
+                        </div>
+                        <span class="category-badge menu">Menu</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">5 Dicembre 2024</time>
+                        <h3 class="post-title">Nuovi Cocktails Invernali</h3>
+                        <p class="post-excerpt">
+                            Aggiunti 3 nuovi cocktails alla carta per la stagione invernale.
+                        </p>
+                        <a href="#" class="read-more">Scopri →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="eventi">
+                    <div class="card-image">
+                        <div style="width: 100%; aspect-ratio: 4/3; background: var(--overlay-sepia); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: var(--antique-gold);">🎵</span>
+                        </div>
+                        <span class="category-badge eventi">Eventi</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">1 Dicembre 2024</time>
+                        <h3 class="post-title">Live Jazz Night</h3>
+                        <p class="post-excerpt">
+                            Serata jazz con il trio "Borgo Swing". Ingresso libero, prenotazione consigliata.
+                        </p>
+                        <a href="#" class="read-more">Scopri →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="mostre">
+                    <div class="card-image">
+                        <div style="width: 100%; aspect-ratio: 4/3; background: var(--overlay-sepia); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: var(--antique-gold);">📷</span>
+                        </div>
+                        <span class="category-badge mostre">Mostre</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">20 Novembre 2024</time>
+                        <h3 class="post-title">Retrospettiva: Un Anno di Mostre</h3>
+                        <p class="post-excerpt">
+                            Guardiamo indietro alle mostre che hanno colorato le nostre pareti nel 2024.
+                        </p>
+                        <a href="#" class="read-more">Scopri →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="eventi">
+                    <div class="card-image">
+                        <div style="width: 100%; aspect-ratio: 4/3; background: var(--overlay-sepia); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2.5rem; color: var(--antique-gold);">🎉</span>
+                        </div>
+                        <span class="category-badge eventi">Eventi</span>
+                    </div>
+                    <div class="card-content">
+                        <time class="post-date">15 Novembre 2024</time>
+                        <h3 class="post-title">10 Anni di Bukowski's</h3>
+                        <p class="post-excerpt">
+                            Celebriamo il decennale con una serata speciale. Grazie Roma!
+                        </p>
+                        <a href="#" class="read-more">Scopri →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn" disabled>← Precedenti</button>
+                <span class="pagination-info">Pagina 1 di 1</span>
+                <button class="pagination-btn" disabled>Successivi →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING EVENTS SIDEBAR -->
+    <section class="section upcoming-events" style="background: var(--dark-sepia);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">PROSSIMI EVENTI</h2>
+            <div class="separator">───── ✦ ─────</div>
+
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">20</span>
+                        <span class="month">DIC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Degustazione Gin & Tonic</h3>
+                        <p>Ore 19:00 - Prenotazione obbligatoria</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">24</span>
+                        <span class="month">DIC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Vigilia di Natale al Bukowski's</h3>
+                        <p>Aperitivo speciale dalle 18:00</p>
+                    </div>
+                </div>
+
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">31</span>
+                        <span class="month">DIC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Capodanno Letterario</h3>
+                        <p>Cenone e brindisi di mezzanotte</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="contatti.html" class="btn">Prenota il Tuo Evento</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column brand">
+                <h3>BUKOWSKI'S BAR</h3>
+                <p style="color: var(--antique-gold); margin-bottom: 1rem;">Galleria · Café · Bistrot</p>
+                <p class="tagline" style="font-style: italic; font-size: 0.95rem; line-height: 1.6;">
+                    "Qui non servono fronzoli.<br>
+                    Solo storie vere e gin autentico."
+                </p>
+            </div>
+
+            <div class="footer-column links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="il-locale.html">Il Locale</a></li>
+                    <li><a href="gin.html">Il Nostro Gin</a></li>
+                    <li><a href="news.html">News & Eventi</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact">
+                <h4>Contatti</h4>
+                <p>Via degli Ombrellari, 25<br>
+                   00193 Roma - Borgo Pio</p>
+                <p>Tel: <a href="tel:+390664760105">06 6476 0105</a></p>
+                <p style="color: var(--antique-gold);">Mar-Dom: 15:00 - 02:00</p>
+            </div>
+
+            <div class="footer-column social">
+                <h4>Seguici</h4>
+                <div class="social-icons" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="https://instagram.com/bukowskis_bar" target="_blank">📷 Instagram</a>
+                    <a href="https://facebook.com/BukowskisBarRoma" target="_blank">📘 Facebook</a>
+                    <a href="https://wa.me/393517139892" target="_blank">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="separator">───── ✦ ─────</div>
+            <div class="footer-legal">
+                <p>&copy; 2024 Bukowski's Bar - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

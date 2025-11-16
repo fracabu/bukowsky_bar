@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galleria Bukowski's Bar - Foto del locale, cocktails, eventi e atmosfera di Borgo Pio, Roma.">
+    <meta name="keywords" content="foto bar Roma, galleria Borgo Pio, cocktails Roma, foto eventi">
+
+    <title>Galleria - Bukowski's Bar | Foto & Atmosfera</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Lora:wght@400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/galleria.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">BUKOWSKI'S</div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="il-locale.html" class="nav-link">Il Locale</a></li>
+                <li><a href="gin.html" class="nav-link">Il Nostro Gin</a></li>
+                <li><a href="news.html" class="nav-link">News & Eventi</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="galleria.html" class="nav-link active">Galleria</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- GALLERY HERO -->
+    <section class="gallery-hero section">
+        <div class="container" style="padding-top: 100px; text-align: center;">
+            <h1>GALLERIA</h1>
+            <div class="separator">───── ✦ ─────</div>
+            <p class="subtitle" style="max-width: 800px; margin: 2rem auto; font-size: 1.125rem;">
+                Le immagini raccontano quello che le parole non possono.
+                Il Bukowski's attraverso gli occhi di chi lo vive.
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="section" style="background: var(--dark-sepia); padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter active" data-filter="all">Tutti</button>
+                <button class="filter" data-filter="locale">Il Locale</button>
+                <button class="filter" data-filter="cocktails">Cocktails</button>
+                <button class="filter" data-filter="eventi">Eventi</button>
+                <button class="filter" data-filter="arte">Arte</button>
+                <button class="filter" data-filter="gin">Gin del Marchese</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="section" style="background: var(--ink-black);">
+        <div class="container">
+            <div class="gallery-grid masonry">
+
+                <!-- IL LOCALE -->
+                <div class="gallery-item" data-category="locale">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 3/4;">
+                            <span>🏛️</span>
+                            <p>Interno Locale</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">L'atmosfera intima del Bukowski's</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="locale">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 16/9;">
+                            <span>📚</span>
+                            <p>Biblioteca</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">La nostra biblioteca letteraria</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="locale">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 4/3;">
+                            <span>🪑</span>
+                            <p>Arredamento</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Divani rossi e tavolini vintage</p>
+                    </div>
+                </div>
+
+                <!-- COCKTAILS -->
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 1/1;">
+                            <span>🍸</span>
+                            <p>Negroni</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Negroni perfetto</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 3/4;">
+                            <span>🥃</span>
+                            <p>Spritz</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Uno dei nostri 12 Spritz</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 4/3;">
+                            <span>🍹</span>
+                            <p>Gin Tonic</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Gin del Marchese & Tonic</p>
+                    </div>
+                </div>
+
+                <!-- EVENTI -->
+                <div class="gallery-item" data-category="eventi">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 16/9;">
+                            <span>🎉</span>
+                            <p>Serata Evento</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Inaugurazione mostra fotografica</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="eventi">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 1/1;">
+                            <span>🎵</span>
+                            <p>Live Music</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Serata jazz live</p>
+                    </div>
+                </div>
+
+                <!-- ARTE -->
+                <div class="gallery-item" data-category="arte">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 3/4;">
+                            <span>🎨</span>
+                            <p>Opera Esposta</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Mostra "Luci di Roma"</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arte">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 4/3;">
+                            <span>📷</span>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Esposizione fotografica permanente</p>
+                    </div>
+                </div>
+
+                <!-- GIN DEL MARCHESE -->
+                <div class="gallery-item" data-category="gin">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 3/4;">
+                            <span>🌿</span>
+                            <p>Botaniche</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Le botaniche del Gin del Marchese</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gin">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 1/1;">
+                            <span>🍾</span>
+                            <p>Bottiglia</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Gin del Marchese - Edizione Bukowski's</p>
+                    </div>
+                </div>
+
+                <!-- MORE LOCALE -->
+                <div class="gallery-item" data-category="locale">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 16/9;">
+                            <span>🌙</span>
+                            <p>Esterno Notte</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Via degli Ombrellari di notte</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="locale">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 4/3;">
+                            <span>💡</span>
+                            <p>Illuminazione</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">L'atmosfera speakeasy</p>
+                    </div>
+                </div>
+
+                <!-- MORE COCKTAILS -->
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 1/1;">
+                            <span>🍷</span>
+                            <p>Martini</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Martini Letterario</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cocktails">
+                    <div class="image-wrapper">
+                        <div class="placeholder-image" style="aspect-ratio: 3/4;">
+                            <span>🥂</span>
+                            <p>Champagne</p>
+                        </div>
+                    </div>
+                    <div class="item-overlay">
+                        <p class="caption">Bollicine per brindare</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="close" aria-label="Chiudi">&times;</button>
+        <button class="prev" aria-label="Precedente">‹</button>
+        <button class="next" aria-label="Successiva">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- INSTAGRAM CTA -->
+    <section class="section" style="background: var(--dark-sepia); text-align: center;">
+        <div class="container">
+            <h2>SEGUICI SU INSTAGRAM</h2>
+            <div class="separator">───── ✦ ─────</div>
+            <p style="margin: 2rem auto; max-width: 600px; font-size: 1.1rem; color: var(--antique-gold);">
+                Ogni giorno nuove foto, storie e momenti dal Bukowski's.<br>
+                Tag <strong>@bukowskis_bar</strong> per essere ripostato!
+            </p>
+            <a href="https://instagram.com/bukowskis_bar" target="_blank" class="btn">
+                📷 Seguici su Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column brand">
+                <h3>BUKOWSKI'S BAR</h3>
+                <p style="color: var(--antique-gold); margin-bottom: 1rem;">Galleria · Café · Bistrot</p>
+                <p class="tagline" style="font-style: italic; font-size: 0.95rem; line-height: 1.6;">
+                    "Qui non servono fronzoli.<br>
+                    Solo storie vere e gin autentico."
+                </p>
+            </div>
+
+            <div class="footer-column links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="il-locale.html">Il Locale</a></li>
+                    <li><a href="gin.html">Il Nostro Gin</a></li>
+                    <li><a href="news.html">News & Eventi</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column contact">
+                <h4>Contatti</h4>
+                <p>Via degli Ombrellari, 25<br>
+                   00193 Roma - Borgo Pio</p>
+                <p>Tel: <a href="tel:+390664760105">06 6476 0105</a></p>
+                <p style="color: var(--antique-gold);">Mar-Dom: 15:00 - 02:00</p>
+            </div>
+
+            <div class="footer-column social">
+                <h4>Seguici</h4>
+                <div class="social-icons" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="https://instagram.com/bukowskis_bar" target="_blank">📷 Instagram</a>
+                    <a href="https://facebook.com/BukowskisBarRoma" target="_blank">📘 Facebook</a>
+                    <a href="https://wa.me/393517139892" target="_blank">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="separator">───── ✦ ─────</div>
+            <div class="footer-legal">
+                <p>&copy; 2024 Bukowski's Bar - Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
