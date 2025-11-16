@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- HERO SECTION - Dante Style -->
-    <section class="hero relative h-screen flex items-center justify-center overflow-hidden">
+    <section class="hero relative h-screen flex items-center justify-center overflow-hidden pt-20">
       <!-- Background Video -->
       <video
         autoplay
@@ -23,20 +23,20 @@
       <div class="absolute inset-0 bg-black/60"></div>
 
       <!-- Content -->
-      <div class="relative z-10 text-center px-6">
-        <p class="text-white/80 text-xs md:text-sm tracking-[0.3em] uppercase mb-4 font-accent">Est. 2014</p>
+      <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <p class="text-white/80 text-[10px] sm:text-xs md:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4 font-accent">Est. 2014</p>
 
-        <h1 class="text-white text-7xl md:text-9xl font-light tracking-[0.15em] mb-2 font-display">
+        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-[0.1em] sm:tracking-[0.15em] mb-2 sm:mb-3 md:mb-4 font-display leading-tight">
           BUKOWSKI'S
         </h1>
 
-        <p class="text-white/90 text-base md:text-lg tracking-[0.4em] uppercase font-accent">
+        <p class="text-white/90 text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase font-accent">
           Borgo Pio · Roma
         </p>
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div class="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <div class="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
           <div class="w-1 h-2 bg-white/60 rounded-full"></div>
         </div>
