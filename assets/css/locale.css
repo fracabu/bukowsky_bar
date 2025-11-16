@@ -122,8 +122,8 @@
 }
 
 .atmosphere-card p {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 1.125rem; /* Increased from 1rem */
+    line-height: 1.9;
     color: var(--paper-cream);
 }
 
@@ -173,9 +173,9 @@
 }
 
 .feature-item p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: var(--smoke-gray);
+    font-size: 1.125rem; /* Increased from 1rem */
+    line-height: 1.9;
+    color: var(--paper-cream); /* Changed from smoke-gray for better contrast on bordeaux background */
     margin: 0;
 }
 
@@ -215,8 +215,8 @@
 }
 
 .info-card p {
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 1.125rem; /* Increased from 1rem */
+    line-height: 1.9;
     color: var(--paper-cream);
     margin-bottom: 0.5rem;
 }

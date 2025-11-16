@@ -57,7 +57,19 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px; /* Increased from 16px */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -106,7 +118,8 @@ h3 {
 
 p {
   margin-bottom: var(--spacing-sm);
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1.125rem, 2vw, 1.25rem); /* Increased from 1rem-1.125rem to 1.125rem-1.25rem */
+  line-height: 1.9;
 }
 
 a {
@@ -573,6 +586,148 @@ a:hover {
   50% {
     transform: translateX(-50%) translateY(-10px);
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--gold-glow),
+                0 0 10px var(--gold-glow);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--gold-glow),
+                0 0 30px var(--gold-glow),
+                0 0 40px var(--gold-glow);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease both;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.8s ease both;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.8s ease both;
+}
+
+.scale-in {
+  animation: scaleIn 0.6s ease both;
+}
+
+.slide-down {
+  animation: slideDown 0.5s ease both;
+}
+
+/* Stagger Animation Delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* Hover Enhancements */
+.hover-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.hover-glow {
+  transition: all var(--transition-base);
+}
+
+.hover-glow:hover {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.hover-scale {
+  transition: transform var(--transition-base);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
 }
 
 /* ========================================
