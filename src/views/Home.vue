@@ -36,7 +36,7 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div class="absolute bottom-28 sm:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <div class="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
           <div class="w-1 h-2 bg-white/60 rounded-full"></div>
         </div>
