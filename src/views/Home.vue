@@ -30,9 +30,28 @@
           BUKOWSKI'S
         </h1>
 
-        <p class="text-white/90 text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase font-accent">
+        <p class="text-white/90 text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase font-accent mb-6">
           Borgo Pio · Roma
         </p>
+
+        <p class="text-white/70 text-sm sm:text-base md:text-lg italic font-light mb-8 max-w-2xl mx-auto">
+          "Qui non servono fronzoli. Solo tavoli vissuti, risate vere, Gin del Marchese e storie che si incrociano tra un sorso e l'altro."
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <router-link
+            to="/il-locale"
+            class="inline-block border-2 border-white text-white px-8 py-3 text-xs tracking-[0.2em] uppercase font-accent hover:bg-white hover:text-black transition-all duration-300 no-underline"
+          >
+            Scopri il Locale
+          </router-link>
+          <router-link
+            to="/gin"
+            class="inline-block border border-white/60 text-white px-8 py-3 text-xs tracking-[0.2em] uppercase font-accent hover:border-white hover:bg-white/10 transition-all duration-300 no-underline"
+          >
+            Il Nostro Gin
+          </router-link>
+        </div>
       </div>
 
       <!-- Scroll Indicator -->
@@ -62,6 +81,16 @@
       </div>
     </section>
 
+    <!-- BUKOWSKI QUOTE SECTION -->
+    <section class="bg-black py-16 border-y border-white/10">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <blockquote class="text-white/80 text-xl md:text-2xl font-light italic leading-relaxed">
+          "Find what you love and let it kill you."
+        </blockquote>
+        <p class="text-white/40 text-sm mt-6 tracking-wider">— Charles Bukowski</p>
+      </div>
+    </section>
+
     <!-- SPLIT SECTION - Image + Text -->
     <section class="bg-black py-20">
       <div class="max-w-7xl mx-auto px-6">
@@ -86,10 +115,18 @@
             </h3>
 
             <div class="space-y-4 text-white/70 font-body text-base leading-relaxed mb-8">
-              <p><strong class="text-white">Alessandro Mattei</strong>, proprietario</p>
-              <p>Biblioteca viva e mostre fotografiche rotanti</p>
-              <p>Casa del Gin del Marchese</p>
-              <p>Ogni sera dalle 15:00 alle 02:00</p>
+              <p>
+                Nel dicembre del 2014, <strong class="text-white">Alessandro Mattei</strong> ha trasformato
+                una ex galleria d'arte nel cuore di Borgo Pio in quello che oggi è il Bukowski's Bar.
+              </p>
+              <p>
+                Un salotto letterario dove la biblioteca viva convive con mostre fotografiche rotanti,
+                dove i divani rossi raccontano storie di Fellini, Bukowski e Star Wars, dove ogni sera
+                dalle 15:00 alle 02:00 gli sconosciuti diventano amici davanti a un Gin del Marchese.
+              </p>
+              <p class="text-white/50 text-sm italic">
+                "Un bar che non sa stare zitto. Parla di tutto: di ginepro, di iris, di Roma autentica."
+              </p>
             </div>
 
             <router-link
