@@ -13,7 +13,7 @@
         <source src="/2345459-uhd_3840_2160_25fps.mp4" type="video/mp4">
         <!-- Fallback to image if video doesn't load -->
         <img
-          src="/503350915_2987122261470100_8225564212138507156_n.jpg"
+          src="/interno-locale.jpg"
           alt="Bukowski's Bar Interior"
           class="absolute inset-0 w-full h-full object-cover"
         >
@@ -98,7 +98,7 @@
           <!-- Image -->
           <div class="order-2 lg:order-1">
             <img
-              src="/503578895_2987121988136794_5560936930106572160_n.jpg"
+              src="/interno-divani.jpg"
               alt="Interno Bukowski's Bar"
               class="w-full h-auto object-cover"
             >
@@ -178,7 +178,7 @@
     <section class="bg-black py-20">
       <div class="max-w-7xl mx-auto px-6">
         <img
-          src="/503801575_2987122254803434_5297063782742739829_n.jpg"
+          src="/esterno-ingresso.jpg"
           alt="Entrata Bukowski's Bar"
           class="w-full h-auto"
         >

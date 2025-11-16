@@ -38,12 +38,15 @@
           <div
             v-for="item in filteredItems"
             :key="item.id"
-            class="group relative aspect-square bg-white/5 overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-300">
-            <div class="w-full h-full flex items-center justify-center">
-              <p class="text-white/30 text-sm">{{ item.title }}</p>
-            </div>
-            <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
-              <p class="text-white text-center text-sm">{{ item.caption }}</p>
+            class="group relative aspect-square overflow-hidden cursor-pointer transition-all duration-300">
+            <img
+              :src="item.image"
+              :alt="item.title"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6">
+              <h3 class="text-white text-lg font-light mb-2 tracking-wide">{{ item.title }}</h3>
+              <p class="text-white/70 text-center text-sm">{{ item.caption }}</p>
             </div>
           </div>
         </div>
@@ -85,18 +88,10 @@ const filters = [
 ]
 
 const galleryItems = [
-  { id: 1, category: 'locale', title: 'Interno Locale', caption: "L'atmosfera intima del Bukowski's" },
-  { id: 2, category: 'locale', title: 'Biblioteca', caption: 'La nostra biblioteca letteraria' },
-  { id: 3, category: 'locale', title: 'Arredamento', caption: 'Divani e tavolini vintage' },
-  { id: 4, category: 'cocktails', title: 'Negroni', caption: 'Negroni perfetto' },
-  { id: 5, category: 'cocktails', title: 'Spritz', caption: 'Uno dei nostri 12 Spritz' },
-  { id: 6, category: 'cocktails', title: 'Gin Tonic', caption: 'Gin del Marchese & Tonic' },
-  { id: 7, category: 'eventi', title: 'Serata Evento', caption: 'Inaugurazione mostra fotografica' },
-  { id: 8, category: 'eventi', title: 'Live Music', caption: 'Serata jazz live' },
-  { id: 9, category: 'arte', title: 'Opera Esposta', caption: 'Mostra "Luci di Roma"' },
-  { id: 10, category: 'arte', title: 'Fotografia', caption: 'Esposizione fotografica permanente' },
-  { id: 11, category: 'gin', title: 'Botaniche', caption: 'Le botaniche del Gin del Marchese' },
-  { id: 12, category: 'gin', title: 'Bottiglia', caption: 'Gin del Marchese - Edizione Bukowski\'s' }
+  { id: 1, category: 'locale', title: 'Interno Locale', caption: "L'atmosfera intima del Bukowski's", image: '/interno-locale.jpg' },
+  { id: 2, category: 'locale', title: 'Divani Rossi', caption: 'I divani vintage del salotto letterario', image: '/interno-divani.jpg' },
+  { id: 3, category: 'locale', title: 'Ingresso', caption: 'L\'ingresso del locale a Borgo Pio', image: '/esterno-ingresso.jpg' },
+  { id: 4, category: 'gin', title: 'Gin del Marchese', caption: 'La nostra bottiglia artigianale', image: '/gin-bottiglia.png' }
 ]
 
 const filteredItems = computed(() => {

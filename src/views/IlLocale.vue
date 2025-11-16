@@ -5,7 +5,7 @@
       <!-- Background Image -->
       <div class="absolute inset-0">
         <img
-          src="/503578895_2987121988136794_5560936930106572160_n.jpg"
+          src="/interno-divani.jpg"
           alt="Interno Bukowski's Bar"
           class="w-full h-full object-cover opacity-40"
         >
@@ -77,7 +77,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1">
             <img
-              src="/503801575_2987122254803434_5297063782742739829_n.jpg"
+              src="/esterno-ingresso.jpg"
               alt="Bukowski's Bar Entrance"
               class="w-full h-auto"
             >

@@ -66,7 +66,7 @@
       <div class="max-w-5xl mx-auto px-6">
         <div class="flex justify-center">
           <img
-            src="/gin.png"
+            src="/gin-bottiglia.png"
             alt="Gin del Marchese - Bottiglia"
             class="w-full max-w-2xl h-auto object-contain"
           >
