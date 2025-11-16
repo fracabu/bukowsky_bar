@@ -38,16 +38,16 @@
           "Qui non servono fronzoli. Solo tavoli vissuti, risate vere, Gin del Marchese e storie che si incrociano tra un sorso e l'altro."
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-row gap-3 sm:gap-4 justify-center">
           <router-link
             to="/il-locale"
-            class="inline-block border-2 border-white text-white px-8 py-3 text-xs tracking-[0.2em] uppercase font-accent hover:bg-white hover:text-black transition-all duration-300 no-underline"
+            class="inline-block border-2 border-white text-white px-6 sm:px-8 py-3 text-[10px] sm:text-xs tracking-[0.2em] uppercase font-accent hover:bg-white hover:text-black transition-all duration-300 no-underline"
           >
             Scopri il Locale
           </router-link>
           <router-link
             to="/gin"
-            class="inline-block border border-white/60 text-white px-8 py-3 text-xs tracking-[0.2em] uppercase font-accent hover:border-white hover:bg-white/10 transition-all duration-300 no-underline"
+            class="inline-block border border-white/60 text-white px-6 sm:px-8 py-3 text-[10px] sm:text-xs tracking-[0.2em] uppercase font-accent hover:border-white hover:bg-white/10 transition-all duration-300 no-underline"
           >
             Il Nostro Gin
           </router-link>
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-44 sm:bottom-48 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div class="absolute bottom-36 sm:bottom-40 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <div class="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
           <div class="w-1 h-2 bg-white/60 rounded-full"></div>
         </div>
