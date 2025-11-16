@@ -1,5 +1,5 @@
 <template>
-  <footer class="site-footer fixed bottom-0 left-0 right-0 bg-black/95 backdrop-blur-sm text-white border-t border-white/10 z-40">
+  <footer class="site-footer fixed bottom-0 left-0 right-0 bg-black/95 backdrop-blur-sm text-white border-t border-white/10 z-40 overflow-x-hidden">
     <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
         <!-- Left - Contact -->

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- HERO SECTION - Dante Style -->
-    <section class="hero relative h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
+    <section class="hero relative h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20 pb-16">
       <!-- Background Video -->
       <video
         autoplay
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-16 sm:bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <div class="absolute bottom-20 sm:bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <div class="w-6 h-10 border-2 border-white/40 rounded-full flex items-start justify-center p-2">
           <div class="w-1 h-2 bg-white/60 rounded-full"></div>
         </div>
@@ -44,13 +44,13 @@
     </section>
 
     <!-- INTRO SECTION - Dante Style -->
-    <section class="bg-black py-24 md:py-32">
+    <section class="bg-black py-24 md:py-32 overflow-x-hidden">
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <p class="text-white/60 text-xs md:text-sm tracking-[0.3em] uppercase mb-6 font-accent">
+        <p class="text-white/60 text-xs md:text-sm tracking-[0.15em] md:tracking-[0.3em] uppercase mb-6 font-accent">
           Galleria · Café · Bistrot
         </p>
 
-        <h2 class="text-white text-3xl md:text-5xl font-light tracking-wide mb-8 font-display leading-relaxed">
+        <h2 class="text-white text-3xl md:text-5xl font-light tracking-normal md:tracking-wide mb-8 font-display leading-relaxed">
           Un salotto letterario dove l'arte incontra il gin
         </h2>
 

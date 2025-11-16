@@ -5,12 +5,12 @@
 /* Custom base styles */
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
 
   body {
     @apply bg-ink-black text-paper-cream font-body;
-    @apply antialiased;
+    @apply antialiased overflow-x-hidden;
     line-height: 1.8;
   }
 }
