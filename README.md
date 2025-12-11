@@ -330,3 +330,4 @@ This project is proprietary and confidential. Unauthorized copying, distribution
 [![GitHub forks](https://img.shields.io/github/forks/fracabu/bukowsky_bar?style=social)](https://github.com/fracabu/bukowsky_bar/network/members)
 
 </div>
+
